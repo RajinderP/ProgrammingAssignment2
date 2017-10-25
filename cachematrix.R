@@ -30,8 +30,13 @@ cacheSolve <- function(x, ...) {
 }
 
 #Example
-mCM <- makeCacheMatrix()
-x <- matrix(1:4,2,2)
+
+mCM 	<- makeCacheMatrix()
+x 	<- matrix(1:4,2,2)
+
 mCM$set(x)
+
 cacheSolve(mCM)
+
+#repeat to show cache message
 cacheSolve(mCM)
